@@ -1,0 +1,48 @@
+#dashbg {
+  background: url("../assets/imgs/agriBackground.jpg");
+  background-size: cover;
+}
+#person {
+  height: 50px;
+  width: 50px;
+}
+#name {
+  font-size: 18px;
+}
+#logout {
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+ion-card {
+  // background-size: cover;
+  height: 125px;
+  background-repeat: no-repeat;
+}
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 1.3em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+  }
+
+  // .card-subtitle {
+  //   font-size: 1.0em;
+  //   position: absolute;
+  //   top: 52%;
+  //   width: 100%;
+  //   color: #fff;
+  // }
+
+}

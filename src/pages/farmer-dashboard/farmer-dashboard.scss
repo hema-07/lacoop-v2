@@ -1,0 +1,19 @@
+page-farmer-dashboard {
+
+   ion-card {
+     position: relative;
+     text-align: center;
+   }
+
+   .card-title {
+     position: absolute;
+     top: 36%;
+     font-size: 1.3em;
+     width: 100%;
+     font-weight: bolder;
+     color: white;
+     padding: 5px;
+     font-size: 20px;
+   }
+  
+}

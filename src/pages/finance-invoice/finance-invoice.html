@@ -1,0 +1,80 @@
+<html>
+<body id="bg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+        <ion-col col-2>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+              <img src="../assets/imgs/left-arrow.png" style="margin-top: 15px;" (click)="gobackdashboard()"/>
+          </ion-col>
+          <ion-col col-8 class="title">
+              <h2 style="font-size: 20px;font-weight: bold;text-align:center;">Invoices</h2>
+            </ion-col>
+            <ion-col col-2>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+<div>
+  <ion-grid>
+    <ion-row>
+  <ion-card-content>
+    <table id="customers">
+      <thead>
+      <tr>
+        <th>Invoice No</th>
+        <th>Order Id</th>
+        <th>Delivery date</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr (click)="orderDetails($event)">
+         <td >IO87453278EA</td>
+         <td>OA_01 </td>
+         <td>20 May 2018</td>
+         <td>Created</td>
+       </tr>
+       <tr>
+        <td >IO87453778EA</td>
+        <td>OA_02 </td>
+        <td>25 May 2018</td>
+        <td>Created</td>
+      </tr>
+      <tr>
+       <td >IO87453211EA</td>
+       <td>OA_03 </td>
+       <td>27 May 2018</td>
+       <td>Created</td>
+     </tr>
+     </tbody>
+    </table>
+  </ion-card-content>
+ 
+        </ion-row>
+      <!-- card end-->
+    
+  </ion-grid>
+</div>
+</body>
+</html>

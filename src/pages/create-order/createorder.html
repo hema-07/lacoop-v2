@@ -1,0 +1,79 @@
+<html>
+
+  <body id="dashbg" style="overflow:scroll;">
+    <div  id="nav" class="bar bar-header" fixed>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+                <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+            </ion-col>
+
+            <ion-col>
+              <p id="name">Christy</p>
+            </ion-col>
+            <ion-col>
+              <img src="../assets/imgs/lacoopLogo.jpg" style="border-radius:5">
+            </ion-col>
+            <ion-col>
+            </ion-col>
+            <ion-col>
+              <img src="../assets/imgs/logout.png" id="logout">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <div>
+        <ion-row>
+          <ion-col>
+              <h3 style="text-align: center;">Create Order</h3>
+          </ion-col>
+        </ion-row>
+
+      </div>
+      <div>
+        <ion-row>
+        <ion-col col-4>
+        <ion-label style="font-size: 20px;margin-left:50px;">For:</ion-label>
+      </ion-col>
+      <ion-col col-8>
+        <ion-input type="text" value="" placeholder="Enter here.."></ion-input>
+      </ion-col>
+      </ion-row>
+      </div>
+
+    <div>
+          <ion-card id="o" style="opacity: 0.7;">
+    <table>
+        <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Rate / Tonne in CAD</th>
+          <th>Qty</th>
+          <th>Remarks</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>UREA</td>
+          <td>1000</td>
+          <td><ion-input type="text" style="text-align: center;width:60px;" placeholder="0"></ion-input></td>
+          <td><ion-input type="text" style="width:80px;" placeholder="remarks"></ion-input></td>
+        </tr>
+        </tbody>
+      </table>
+      </ion-card>
+</div>
+<ion-grid>
+<ion-row>
+<ion-col></ion-col>
+<ion-col><button  ion-button>
+  <p>Continue</p>
+</button></ion-col>
+<ion-col><button (click)="buy()"  ion-button color="secondary">
+  <p>Submit</p>
+</button></ion-col>
+<ion-col></ion-col>
+</ion-row>
+</ion-grid>
+</body>
+</html>

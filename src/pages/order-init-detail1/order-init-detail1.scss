@@ -1,0 +1,60 @@
+page-initiate-detail1 {
+  #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+      margin-top: 15px;
+      margin-left: 20px;
+  }
+//   .card-md{
+//   margin-top: 20%;
+//   }
+  #customers td, #customers th {
+      border: 1px solid #ddd;
+      font-size: 18px;
+      padding: 8px;
+  }
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  #customers tr:hover {background-color: #ddd;}
+  #customers th {
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+  }
+    #init-card{
+    background-repeat: no-repeat;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+[col-6]{
+    font-size: 18px;
+    
+    padding-left:25px;
+}
+
+[col-6] p{
+    margin-top:10px;
+    font-size: 18px;
+}
+ #bgac {
+    background: url("../assets/imgs/agriBackground.jpg");
+    background-size: cover;
+}
+#con{
+        background-color: rgba(255, 255, 255, 0.5);
+        height:500px;
+}
+#divider{
+    background-color:#4CAF50;
+    width:90%;
+    margin-top:10px;
+      margin-left: 20px;
+}
+#divider p{
+    font-size:18px;
+    color:white;
+    font-weight: bold;
+}
+
+}

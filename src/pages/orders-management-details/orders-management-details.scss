@@ -1,0 +1,56 @@
+page-orders {
+
+  p{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h2,h3{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  td {
+      text-align: left;
+      padding: 5px;
+  }
+  th {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.title{
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+  color: black;
+}
+  table{
+      font-family: arial, sans-serif;
+      width: 100%;
+      font-size: 16px;
+    margin-top: 20px;
+    background-color: rbga(255,255,255,0.5);
+    color: white;
+  }
+table, td, th{
+  border: 2px solid white;
+}
+  #order{
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 190px;
+    font-weight:bold;
+  }
+  #order p{
+
+    font-size: 16px;
+    padding:5px;
+  }
+  #a{
+    margin: 5px;
+  }
+  #de1 th{
+    padding:2px;
+  }
+  }
+

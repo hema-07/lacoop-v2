@@ -1,0 +1,123 @@
+<html>
+<body id="bg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+        <ion-col col-2>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+              <img src="../assets/imgs/left-arrow.png" style="margin-top: 15px;" (click)="gobackdashboard()"/>
+          </ion-col>
+          <ion-col col-8 class="title">
+              <h2 style="font-size: 20px;font-weight: bold;text-align:center;">Invoice Details</h2>
+            </ion-col>
+            <ion-col col-2>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+<ion-grid>
+    <ion-card id="past">
+        <ion-row>
+          <ion-col col-4>
+           <ion-label> Invoice No:</ion-label>
+         </ion-col>
+         <ion-col col-8>
+           <p>IO87453278EA</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+           <ion-label> Order Id:</ion-label>
+         </ion-col>
+         <ion-col col-8>
+           <p>OA_01</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+           <ion-label> Order Type:</ion-label>
+         </ion-col>
+         <ion-col col-8>
+           <p>Self Fulfilled</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+           <ion-label> Delivery Date:</ion-label>
+         </ion-col>
+         <ion-col col-8>
+           <p>20 May 2018</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+           <ion-label>Amount:</ion-label>
+         </ion-col>
+         <ion-col col-8>
+           <p> 1300$</p>
+          </ion-col>
+        </ion-row>
+    </ion-card>
+<ion-row>
+<table id="customers">
+      <thead>
+        <tr>
+          <th>ItemId</th>
+          <th>Quantity</th>
+          <th>Unit</th>
+          <th>Amount</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+         <td >ch_01</td>
+         <td>500 </td>
+         <td>Lb</td>
+         <td>500$</td>
+         <td> <ion-checkbox color="dark"></ion-checkbox> </td>
+       </tr>
+       <tr>
+        <td >wh_01</td>
+        <td>500 </td>
+        <td>Lb</td>
+        <td>800$</td>
+        <td> <ion-checkbox color="dark"></ion-checkbox> </td>
+      </tr>
+     </tbody>
+   </table>
+
+</ion-row>
+<ion-row>
+<ion-col col-4>
+</ion-col>
+<ion-col col-4>
+<button ion-button color="secondary" (click)="showConfirm1($event)">Create Invoice</button>
+</ion-col>
+<ion-col col-4>
+</ion-col>
+
+</ion-row>
+</ion-grid>
+</body>
+</html>

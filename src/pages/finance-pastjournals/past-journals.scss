@@ -1,0 +1,53 @@
+page-past-journals{
+ #bg {
+    background: url("../assets/imgs/agriBackground.jpg");
+    background-size: cover;
+}
+  #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 10px;
+        
+        font-size: 18px;
+    }
+    .card-md{
+    margin-top: 20%;
+
+    }
+    #customers td, #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        
+        font-size: 18px;
+    }
+
+    #customers tr{background-color: #f2f2f2;}
+
+    #customers tr:hover {background-color: #ddd;}
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+    }
+ #past
+ {
+         background-color: rgba(255, 255, 255, 0.5);
+         height:260px;
+         margin-left:10px;
+         padding-left:10px;
+         padding-bottom:0px;
+ }
+  #past p{
+      font-size:14px;
+      margin-top:11px;
+  }
+      [col-4]{
+      font-size:16px;
+  }
+}

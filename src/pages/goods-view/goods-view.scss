@@ -1,0 +1,37 @@
+page-goods-view {
+  ion-input[type=text] {
+      border: none;
+      border-bottom: 2px solid grey;
+      width: 160px;
+  }
+  .col {
+    padding: 0px;
+  }
+  .card-ios p{
+    margin-top: 10px;
+  }
+  .label-ios{
+    margin-left: 10px;
+
+  }
+ 
+  .label-md {
+    margin: 13px 8px 13px 0;
+    margin-left: 20px;
+}
+ion-card{
+  height:210px;
+}
+.card-md p {
+  margin: 0 0 2px;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #222;
+  margin-top: 10px;
+}
+ion-label{
+  margin-left: 10px;
+}
+
+}

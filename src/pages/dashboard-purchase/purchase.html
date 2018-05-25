@@ -1,0 +1,72 @@
+<html>
+
+<body id="dashbg" style="overflow:scroll;">
+
+      <div  class="bar bar-header" fixed>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+              </ion-col>
+
+              <ion-col>
+                <p id="name">Christy</p>
+              </ion-col>
+              <ion-col>
+                <img src="../assets/imgs/lacoop.jpg" style="border-radius:5">
+              </ion-col>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+                <img src="../assets/imgs/logout.png" id="logout">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
+      <div>
+          <ion-row>
+            <ion-col>
+                <h3 style="text-align: center;">Fertilizers</h3>
+            </ion-col>
+          </ion-row>
+
+        </div><ion-grid>
+
+      <ion-row>
+        <ion-col>
+            <ion-searchbar placeholder="Search by Item" (ionInput)="getItems($event)"></ion-searchbar>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-card style="margin-top: 50px;opacity: 0.7;">
+        <ion-col>
+          <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Item No</th>
+                    <th>Item Name</th>
+                    <th>Description</th>
+                    <th>Rate / Tonne in CAD</th>
+                    <th>Action</th>
+                  </tr>
+                  <br>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let order of Order1">
+                   <td >{{order.ItemNo}}</td>
+                   <td>{{order.ItemName}} </td>
+                   <td>{{order.Description}}</td>
+                   <td>{{order.Rate}}</td>
+                   <td><button ion-button (click)="orderDetail()">Buy</button></td>
+                 </tr>
+               </tbody>
+             </table>
+        </ion-col>
+      </ion-card>
+      </ion-row>
+
+    </ion-grid>
+  </body>
+      </html>
+

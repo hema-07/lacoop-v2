@@ -1,0 +1,62 @@
+<html>
+<body id="bg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+        <ion-col col-2>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+              <!-- <img src="../assets/imgs/left-arrow.png" style="margin-top: 15px;" (click)="gobackdashboard()"/> -->
+          </ion-col>
+          <ion-col col-8 class="title">
+              <h2 style="font-size: 20px;font-weight: bold;text-align:center;">Invoice Details</h2>
+            </ion-col>
+            <ion-col col-2>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+<ion-card id="card-download"><p style="text-align:center;font-size:18px;">
+<b>Invoice created and sent to Lacoop successfully.<br>
+Do you want to download the Invoice?</b></p>
+
+<ion-row>
+<ion-col col-2>
+</ion-col>
+<ion-col col-3>
+<button ion-button color="secondary" (click)="presentToast()">Yes</button>
+</ion-col>
+<ion-col col-1>
+</ion-col>
+<ion-col col-3>
+<button ion-button color="danger" (click)="present1()">No</button>
+</ion-col>
+<ion-col col-2>
+</ion-col>
+</ion-row>
+
+
+
+</ion-card>
+
+</body>
+</html>

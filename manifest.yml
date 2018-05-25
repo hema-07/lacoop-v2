@@ -1,0 +1,7 @@
+---
+applications:
+        - name: lacoop
+          buildpack: staticfile_buildpack
+          path: ./www
+          memory: 64M
+          instances: 1

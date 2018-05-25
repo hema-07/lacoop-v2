@@ -1,0 +1,29 @@
+page-shipment {
+    div p{
+        font-size:18px;
+        font-weight: bold;
+    }
+      table{
+      font-family: arial, sans-serif;
+      width: 100%;
+      font-size: 16px;
+    margin-top: 20px;
+    color: white;
+  }
+table, td, th{
+  border: 2px solid white;
+    padding:2px;
+    text-align:center;
+}
+ion-label{
+  font-weight:bold;
+  
+}
+#procard1{
+   height: 250px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-top:15px;
+    text-align:center;
+}
+}

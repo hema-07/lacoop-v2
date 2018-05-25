@@ -1,0 +1,34 @@
+#bga {
+    background: url("../assets/imgs/agriBackground.jpg");
+    background-size: cover;
+}
+
+ion-card, ion-item {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+page-orders{
+  .title{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+  }
+  #ordercard{
+    height: 280px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+#ordercard h2{
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+#ordercard h3{
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+}
+#col1{
+  font-size:16px;
+}
+}

@@ -1,0 +1,26 @@
+page-goods-details {
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+  ion-navbar.toolbar {
+    height: 20px;
+  }
+th{
+  font-weight: bold;
+}
+  ion-card{
+    height: 480px;
+  }
+}

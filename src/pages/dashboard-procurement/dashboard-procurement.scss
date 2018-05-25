@@ -1,0 +1,78 @@
+page-pro{
+
+#order{
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  padding: 5px;
+}
+#order tr{
+    padding: 5px;
+    font-size:14px;
+}
+#order th{
+    padding: 8px;
+    font-size:16px;
+    font-weight: bold;
+}
+#s1{
+  background-image: url("../assets/imgs/t4.jpg");
+  background-size: cover;
+}
+#s2{
+  background-image: url("../assets/imgs/t2.jpg");
+  background-size: cover;
+}
+#s3{
+  background-image: url("../assets/imgs/t1.jpg");
+  background-size: cover;
+}
+#s4{
+  background-image: url("../assets/imgs/t3.jpg");
+  background-size: cover;
+}
+ion-navbar.toolbar {
+  height: 20px;
+}
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 1.3em;
+    width: 100%;
+    font-weight: bolder;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  // .card-subtitle {
+  //   font-size: 1.0em;
+  //   position: absolute;
+  //   top: 52%;
+  //   width: 100%;
+  //   color: #fff;
+  // }
+}
+}
+body{
+    background: url("../assets/imgs/agriBackground.jpg");
+    background-size: cover;
+  }
+  #person {
+    height: 50px;
+    width: 50px;
+  }
+  #name {
+    font-size: 18px;
+  }
+  #logout {
+    margin-right: 0px;
+    margin-top: 10px;
+  }  

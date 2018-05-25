@@ -1,0 +1,61 @@
+<html>
+    <body id="dashbg" style="overflow:scroll;">
+        <div  class="bar bar-header" fixed>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                    <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+                </ion-col>
+    
+                <ion-col>
+                  <p id="name">Christy</p>
+                </ion-col>
+                <ion-col>
+                  <img src="../assets/imgs/lacoop.jpg" style="border-radius:5">
+                </ion-col>
+                <ion-col>
+                </ion-col>
+                <ion-col>
+                  <img src="../assets/imgs/logout.png" id="logout">
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+        </div>
+
+  <ion-grid >
+    <ion-card style="margin-top: 40px;opacity: 0.7;">
+    <ion-row>
+      <ion-col>
+        <ion-item >
+
+          <ion-searchbar placeholder="Search PO" (ionInput)="getItems($event)"></ion-searchbar>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <table class="table table-striped">
+        	    <thead>
+        	      <tr>
+        	        <th>PO Code</th>
+        	        <th>Item Name</th>
+        	        <th>Quantity in Tonne</th>
+        	        <th>Action</th>
+
+        	      </tr>
+        	    </thead>
+        	    <tbody>
+                <tr *ngFor="let order of Order1" >
+                 <td >{{order.code}}</td>
+                 <td>{{order.Item}} </td>
+                 <td>{{order.Quantity}}</td>
+                 <td> <button ion-button (click)="itemDetails($event)" type="button" data-toggle="modal" >Receive</button> </td>
+               </tr>
+             </tbody>
+           </table>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  </ion-grid>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html>
+<body id="dashbg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 col-sm>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2 col-sm>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4 col-sm>
+          <img src="../assets/imgs/lacoopLogo.jpg" style="border-radius:5">
+        </ion-col>
+        <ion-col col-2 col-sm>
+
+        </ion-col>
+        <ion-col col-2 col-sm>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<ion-grid>
+    <ion-row>
+      <ion-col col-3 col-sm>
+          <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="gobackdashboard()"/>Back</a>
+      </ion-col>
+      <ion-col col-6 col-sm class="title">
+          <h2 style="text-align: center;font-weight:bold;">Order Fulfillment</h2>
+        </ion-col>
+        <ion-col col-3 col-sm>
+          </ion-col>
+    </ion-row>
+    </ion-grid>
+<br><br>
+<div class="card-background-page">
+  <ion-grid>
+  <ion-row>
+    <ion-col col-6 col-sm>
+      <ion-card id="order-card" style="border-radius:15%">
+        <img src="../assets/imgs/orderBackground.jpg"  (click)="ordersmanagement()" height="125px;"/>
+        <div id="card-title" class="card-title" (click)="ordersmanagement()">Orders Management</div>
+      </ion-card>
+    </ion-col>
+    <ion-col col-6 col-sm>
+      <ion-card id="order-card" style="border-radius:15%">
+        <img src="../assets/imgs/finance.jpg" height="125px;" (click)="initDash()"/>
+        <div id="card-title" class="card-title" (click)="initDash()">Initiate Job</div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <br>  <br><br><br>
+  <br>
+  <ion-row>
+      <ion-col col-6 col-sm>        
+            <ion-card id="order-card" style="border-radius:15%">
+                    <img src="../assets/imgs/procurement.jpg" height="125px;" (click)="jobList()"/>
+                      <div id="card-title" class="card-title" (click)="jobList()">Job List</div>
+                  </ion-card>
+    </ion-col>
+    <ion-col col-6 col-sm>
+            <ion-card id="order-card" style="border-radius:15%">
+                    <img src="../assets/imgs/customerservice.jpg" height="125px;" (click)="shipAdvice()"/>
+                      <div id="card-title" class="card-title" (click)="shipAdvice()">Shipment Advice</div>
+                  </ion-card>
+    </ion-col>
+
+  </ion-row>
+    <br>  <br>
+</ion-grid>
+</div>
+
+<!-- <ion-content id="dashbg">
+<ion-grid>
+  <! <ion-row>
+    <ion-col col-2>
+      <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+    </ion-col>
+    <ion-col col-2>
+      <p id="name">Claire</p>
+    </ion-col>
+    <ion-col col-4>
+      <img src="../assets/imgs/lacoopLogo.jpg">
+    </ion-col>
+    <ion-col col-2>
+
+    </ion-col>
+    <ion-col col-2>
+      <img src="../assets/imgs/logout.png" id="logout">
+    </ion-col>
+  <! </ion-row>
+  <br/><br/>
+
+</ion-content> -->
+
+
+<!-- <ion-header-bar class = "bar-subheader bar-assertive">
+   <h1 class = "title"></h1>
+</ion-header-bar> -->
+
+<!-- <ion-content id="form">
+  <ion-grid>
+<ion-row>
+    <ion-list>
+    <ion-item>
+      <ion-label fixed>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-row>
+
+
+<ion-row>
+    <ion-list>
+    <ion-item>
+      <ion-label fixed>Email Id</ion-label>
+      <ion-input type="text"></ion-input>
+      <ion-select [(ngModel)]="EmailId">
+        <ion-option value="wipro">Wipro</ion-option>
+        <ion-option value="Gmail">Gmail</ion-option>
+        <ion-option value="Yahoo">Yahoo</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-row>
+
+
+<ion-row>
+  <ion-col>
+  <ion-list>
+    <ion-item>
+      <ion-label>Verticle-CBU</ion-label>
+     <ion-select [(ngModel)]="notifications" interface="action-sheet">
+       <ion-option value="http">HTTP</ion-option>
+       <ion-option value="retail">Retail</ion-option>
+       <ion-option value="cg">Consumer Goods</ion-option>
+     </ion-select>
+    </ion-item>
+  </ion-list>
+  </ion-col>
+  </ion-row>
+<ion-row>
+  <ion-col>
+  <ion-label fixed>Comments</ion-label>
+  <ion-input type="textarea"></ion-input>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col col-4>
+  </ion-col>
+    <ion-col col-4>
+    <button id="postbutton" ion-button full (click)="postsubmit()">POST</button>
+  </ion-col>
+    <ion-col col-4>
+    </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content> -->
+</body>
+</html>

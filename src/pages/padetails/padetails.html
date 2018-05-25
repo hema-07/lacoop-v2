@@ -1,0 +1,80 @@
+<html>
+<body id="bga" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-2>
+
+        </ion-col>
+        <ion-col col-2>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+              <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="goBack6()"/>Back</a>
+          </ion-col>
+          <ion-col col-6 class="title">
+              <p style="font-size: 22px;text-align:center;font-weight: bold;">Payment Advice Details</p>
+            </ion-col>
+            <ion-col col-3>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+
+<ion-card id="details">
+<ion-grid>
+  <ion-card-content>
+  <ion-row>
+    <ion-col col-4>
+      <h2>PA No.</h2>
+    </ion-col>
+    <ion-col col-8>
+      <h2>0000012</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4>
+      <h2>Invoice No.</h2>
+    </ion-col>
+    <ion-col col-8>
+      <h2>IO87453278EA</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4>
+      <h2>Due Date.</h2>
+    </ion-col>
+    <ion-col col-8>
+      <h2>May 9, 2018</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4>
+      <h2>Paid Amount</h2>
+    </ion-col>
+    <ion-col col-8>
+      <h2>500$</h2>
+    </ion-col>
+  </ion-row>
+
+  </ion-card-content>
+</ion-grid>
+</ion-card>
+<button ion-button color="secondary" style="margin-left:90px;" (click)="payRecieved($event)">Payment Recieved</button>
+</body>
+</html>

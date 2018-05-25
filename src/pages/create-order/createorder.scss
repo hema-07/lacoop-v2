@@ -1,0 +1,43 @@
+page-order{
+    td, th {
+        border: 1px solid;
+        padding: 5px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        padding: 2px;
+        margin:5px;
+    background-repeat: no-repeat;
+    background-color: rbga(255,255,255,0.5);
+    }
+tr{
+    font-size: 14px;
+    font-weight:bold;
+    text-align: left;
+}
+th{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+ #tab{
+     text-align: center;
+     height:20px;
+ }
+ ion-input[type=text] {
+      border: none;
+      border-bottom: 2px solid green;
+      width: 160px;
+      font-size: 16px;
+  }
+  .label-md {
+    /* margin: 13px 8px 13px 0; */
+    font-size: 20px;
+    margin-left: 50px;
+  }
+ // #for{
+ //     margin-right: 0px;
+ //     padding-right: 0px;
+ //     text-align: right;
+ // }
+}
