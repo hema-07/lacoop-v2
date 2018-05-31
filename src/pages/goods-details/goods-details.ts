@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 import { GoodsViewPage } from '../goods-view/goods-view';
+
+import { FarmerDashboardPage } from '../farmer-dashboard/farmer-dashboard';
 /**
  * Generated class for the GoodsDetailsPage page.
  *
@@ -46,5 +48,7 @@ export class GoodsDetailsPage {
   itemDetails(ev){
     this.navCtrl.push(GoodsViewPage);
   }
-
+  gobackdashboard(){
+    this.navCtrl.push(FarmerDashboardPage);
+  }
 }

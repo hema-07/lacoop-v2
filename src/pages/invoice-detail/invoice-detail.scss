@@ -1,0 +1,47 @@
+page-detail {
+    #order{
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-weight:bold;
+      height:330px;
+    }
+    #order p{
+      font-size: 16px;
+      padding:5px;
+    }
+    #ordercard{
+        background-repeat: no-repeat;
+        margin-top: 50px;
+      }
+    #ordercard h2{
+      padding: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: black;
+    }
+    #ordercard h3{
+      padding: 5px;
+      font-size: 14px;
+      color: black;
+    }
+    #col1{
+      font-size:16px;
+    }
+    td, th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    ion-navbar.toolbar {
+      height: 20px;
+    }
+  }
+  

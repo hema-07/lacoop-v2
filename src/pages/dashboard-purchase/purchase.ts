@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CreateOrder } from '../create-order/createorder';
 import {  NavController, NavParams } from 'ionic-angular';
-
+import { DashboardProcurement } from '../dashboard-procurement/dashboard-procurement';
 
 @Component({
   selector: 'page-purchase',
@@ -18,12 +18,12 @@ export class DashboardPurchase {
   }
   initializeItems() {
       this.Order1 = [
-        {ItemNo:"UR101",ItemName: "Urea", Description: "46% Nitrogen",Rate:"1000"},
-        {ItemNo:"CAN101",ItemName: "Calcium Ammonium Nitrate", Description: "26% Nitrogen",Rate:"800"},
-        {ItemNo:"UAN101",ItemName: "Urea Ammonium Nitrate", Description: "32% Nitrogen",Rate:"950"},
-        {ItemNo:"NPK101",ItemName: "N.P.K(10-26-26)", Description: "Nitrophosphate with potash",Rate:"900"},
-        {ItemNo:"NPK121",ItemName: "N.P.K(22-22-11)", Description: "Nitrophosphate with potash",Rate:"920"},
-        {ItemNo:"UR121",ItemName: "Urea(coated)", Description: "45% Nitrogen",Rate:"1038"}
+        {ItemNo:"IT_101",ItemName: "Urea", Description: "46% Nitrogen",Rate:"1000"},
+        {ItemNo:"IT_301",ItemName: "Calcium Ammonium Nitrate", Description: "26% Nitrogen",Rate:"800"},
+        {ItemNo:"IT_231",ItemName: "Urea Ammonium Nitrate", Description: "32% Nitrogen",Rate:"950"},
+        {ItemNo:"IT_131",ItemName: "N.P.K(10-26-26)", Description: "Nitrophosphate with potash",Rate:"900"},
+        {ItemNo:"IT_046",ItemName: "N.P.K(22-22-11)", Description: "Nitrophosphate with potash",Rate:"920"},
+        {ItemNo:"IT_289",ItemName: "Urea(coated)", Description: "45% Nitrogen",Rate:"1038"}
       ];
     }
 
@@ -43,10 +43,11 @@ export class DashboardPurchase {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaPage');
   }
-paDetails(event){
-  this.navCtrl.push(CreateOrder);
-}
+
 orderDetail(event){
   this.navCtrl.push(CreateOrder);
+}
+gobackdashboard(){
+  this.navCtrl.push(DashboardProcurement);
 }
 }

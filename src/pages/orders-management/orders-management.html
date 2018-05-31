@@ -1,9 +1,9 @@
 <html>
-<body id="bga" style="overflow:scroll;">
+<body id="dashbg" style="overflow:scroll;">
   <div class="bar bar-header" fixed>
     <ion-grid>
       <ion-row>
-        <ion-col col-2>
+        <ion-col col-2 icon-right>
           <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
         </ion-col>
         <ion-col col-2>
@@ -12,10 +12,10 @@
         <ion-col col-4>
           <img src="../assets/imgs/lacoopLogo.jpg">
         </ion-col>
-        <ion-col col-2>
+        <ion-col col-3>
 
         </ion-col>
-        <ion-col col-2>
+        <ion-col col-1>
           <img src="../assets/imgs/logout.png" id="logout">
         </ion-col>
       </ion-row>
@@ -28,9 +28,11 @@
           <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="goBack2()"/>Back</a>
           </ion-col>
           <ion-col col-6>
-              <p style="font-size: 22px;text-align:center;font-weight: bold;">My Orders</p>
+              <h2 style="text-align:center;font-weight: bold;">My Orders</h2>
             </ion-col>
-            <ion-col col-3>
+            <ion-col col-1></ion-col>
+            <ion-col col-2>
+                <img src="../assets/imgs/add-circular-button.png" style="margin-top: 15px;"/>
               </ion-col>
         </ion-row>
         </ion-grid>
@@ -38,18 +40,11 @@
 <div>
   <ion-grid>
     <ion-row>
-      <ion-col col-8>
+      <ion-col col-10>
         <ion-searchbar></ion-searchbar>
       </ion-col>
-      <ion-col col-1>
-      </ion-col>
-      <ion-col col-1>
-        <img src="../assets/imgs/funnel.png"/>
-      </ion-col>
-      <ion-col col-1>
-        <img src="../assets/imgs/add-circular-button.png"/>
-      </ion-col>
-      <ion-col col-1>
+      <ion-col col-2>
+        <img src="../assets/imgs/funnel.png" style="margin-top: 10px;"/>
       </ion-col>
     </ion-row>
     <!--order details card -->
@@ -58,12 +53,9 @@
       <ion-card id="ordercard" (click)="expandDetails()">
         <ion-row>
           <ion-col>
-              <h2>Order ID  : OA_01</h2>
-              <h2>Order Name: LaCoop</h2>
-          </ion-col>
-          <ion-col>
-            <h2>May 9, 2018</h2>
-            <h2></h2>
+              <h2>Order ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: OA_01</h2> 
+              <h2>Order Name&nbsp;: LaCoop</h2>
+              <h2>Created &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: May 9, 2018</h2>
           </ion-col>
         </ion-row>
         <ion-row id="col1">
@@ -118,15 +110,13 @@
 
           </ion-col>
           <ion-col>
-            <button ion-button icon-left clear>
+            <button ion-button clear>
               <img src="../assets/imgs/tick.png"/>
-              <p class="title">Accept</p>
             </button>
           </ion-col>
-          <ion-col center text-center>
-            <button ion-button icon-left clear>
+          <ion-col center>
+            <button ion-button clear>
               <img src="../assets/imgs/cancel.png"/>
-              <p class="title">Reject</p>
             </button>
           </ion-col>
         </ion-row>
@@ -135,13 +125,11 @@
        <ion-card id="ordercard" (click)="expandDetails1()">
         <ion-row>
           <ion-col>
-              <h2>Order ID  : OA_02</h2>
-              <h2>Order Name: LaCoop</h2>
+              <h2>Order ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: OA_02</h2>
+              <h2>Order Name&nbsp;&nbsp;: LaCoop</h2>
+              <h2>Created &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:May 8, 2018</h2>
           </ion-col>
-          <ion-col>
-            <h2>May 8, 2018</h2>
-            <h2></h2>
-          </ion-col>
+        
         </ion-row>
         <ion-row>
           <ion-col>
@@ -202,13 +190,11 @@
           <ion-col>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/tick.png"/>
-              <p class="title">Accept</p>
             </button>
           </ion-col>
           <ion-col center text-center>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/cancel.png"/>
-              <p class="title">Reject</p>
             </button>
           </ion-col>
         </ion-row>
@@ -217,12 +203,9 @@
         <ion-card id="ordercard">
         <ion-row>
           <ion-col>
-              <h2>Order ID  : OA_03</h2>
-              <h2>Order Name: Self</h2>
-          </ion-col>
-          <ion-col>
-            <h2>May 11, 2018</h2>
-            <h2></h2>
+              <h2>Order ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: OA_03</h2>
+              <h2>Order Name&nbsp;&nbsp;: Self</h2>
+              <h2>Created  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :May 11, 2018</h2>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -284,13 +267,11 @@
           <ion-col>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/tick.png"/>
-              <p class="title">Accept</p>
             </button>
           </ion-col>
           <ion-col center text-center>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/cancel.png"/>
-              <p class="title">Reject</p>
             </button>
           </ion-col>
         </ion-row>
@@ -298,12 +279,9 @@
         <ion-card id="ordercard">
         <ion-row>
           <ion-col>
-              <h2>Order ID  : OA_04</h2>
-              <h2>Order Name: LaCoop</h2>
-          </ion-col>
-          <ion-col>
-            <h2>May 6, 2018</h2>
-            <h2></h2>
+              <h2>Order ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: OA_04</h2>
+              <h2>Order Name&nbsp;&nbsp;: LaCoop</h2>
+              <h2>Created &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:May 6, 2018</h2>
           </ion-col>
         </ion-row>
         <ion-row>
@@ -360,13 +338,11 @@
           <ion-col>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/tick.png"/>
-              <p class="title">Accept</p>
             </button>
           </ion-col>
           <ion-col center text-center>
             <button ion-button icon-left clear>
               <img src="../assets/imgs/cancel.png"/>
-              <p class="title">Reject</p>
             </button>
           </ion-col>
         </ion-row>

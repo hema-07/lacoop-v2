@@ -35,10 +35,22 @@ import { DashboardPurchase } from '../pages/dashboard-purchase/purchase';
 import { FarmerDashboardPage } from '../pages/farmer-dashboard/farmer-dashboard';
 import { GoodsDetailsPage } from '../pages/goods-details/goods-details';
 import { GoodsViewPage } from '../pages/goods-view/goods-view';
-
+import { AccountPayable } from '../pages/account-payable/account-payable';
+import { ListInvoices } from '../pages/list-invoices/list-invoices';
+import { InvoiceDetail } from '../pages/invoice-detail/invoice-detail';
+import { InvoicePop } from '../pages/invoice-pop/invoice-pop';
+import { OrderlistMsgPage } from '../pages/orderlist-msg/orderlist-msg';
+import { PostJounalDetailsPage } from '../pages/post-jounal-details/post-jounal-details';
+import { PostJounalOrderlistPage } from '../pages/post-jounal-orderlist/post-jounal-orderlist';
 @NgModule({
   declarations: [
     MyApp,
+    AccountPayable,
+    PostJounalOrderlistPage,
+    PostJounalDetailsPage,
+    InvoiceDetail,
+    InvoicePop,
+    ListInvoices,
     GoodsViewPage,
     GoodsDetailsPage,
     FarmerDashboardPage,
@@ -69,7 +81,8 @@ import { GoodsViewPage } from '../pages/goods-view/goods-view';
     Procurement1,
     Procurement2,
     DashboardProcurement,
-    CreateOrder
+    CreateOrder,
+    OrderlistMsgPage
   ],
   imports: [
     BrowserModule,
@@ -78,8 +91,14 @@ import { GoodsViewPage } from '../pages/goods-view/goods-view';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    AccountPayable,
+    InvoiceDetail,
+    PostJounalOrderlistPage,
+    PostJounalDetailsPage,
+    InvoicePop,
     GoodsViewPage,
     GoodsDetailsPage,
+    ListInvoices,
     HomePage,
     DashboardPurchase,
     FarmerDashboardPage,
@@ -108,7 +127,8 @@ import { GoodsViewPage } from '../pages/goods-view/goods-view';
     Procurement1,
     Procurement2,
     DashboardProcurement,
-    CreateOrder
+    CreateOrder,
+    OrderlistMsgPage
   ],
   providers: [
     StatusBar,

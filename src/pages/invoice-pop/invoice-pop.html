@@ -1,0 +1,65 @@
+<html>
+<body id="dashbg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 icon-right>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-3>
+
+        </ion-col>
+        <ion-col col-1>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+          <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="goBack2()"/>Back</a>
+          </ion-col>
+          <ion-col col-6>
+              <h2 style="text-align:center;font-weight: bold;">Invoice Details</h2>
+            </ion-col>
+            <ion-col col-1></ion-col>
+            <ion-col col-2>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+<ion-card id="order" style="margin-top:20px">
+<ion-row>
+    <div style="text-align:center">
+    
+        <p>Invoice has been accepted and processed.</p>
+        <p>Do you want to release payment?</p>
+        </div>
+</ion-row>
+ <ion-row>
+   <ion-col></ion-col>
+    <ion-col>
+        <button ion-button color="secondary" style="margin-left:55px;" (click)="paymentRelease()">Yes </button>
+   </ion-col>
+   <ion-col>
+      <button ion-button color="danger">No</button>
+      </ion-col>
+     <ion-col>
+
+     </ion-col>
+ </ion-row>
+
+
+
+</ion-card>
+           
+</body>
+</html>

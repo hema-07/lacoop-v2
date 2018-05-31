@@ -1,0 +1,29 @@
+page-post-jounal-details {
+  td, th {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+  }
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+  }
+  tr{
+      font-size: 14px;
+    
+      text-align: left;
+  }
+  th{
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+  }
+  .button-md{
+  margin-left: 50px;
+  }
+  #car {
+      height:280px;
+  }
+
+}

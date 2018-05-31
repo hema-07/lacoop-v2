@@ -1,0 +1,101 @@
+<html>
+<body id="dashbg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 icon-right>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-3>
+
+        </ion-col>
+        <ion-col col-1>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div class="bar bar-subheader" fixed>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+          <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="goBack2()"/>Back</a>
+          </ion-col>
+          <ion-col col-6>
+              <h2 style="text-align:center;font-weight: bold;">Invoice details</h2>
+            </ion-col>
+            <ion-col col-1></ion-col>
+            <ion-col col-2>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+</div>
+<ion-grid>
+        <ion-card id="order">
+         <!-- card start-->
+               <ion-row>
+      
+                 <ion-col col-6>
+                 <div id="a">
+                     <p>Invoice No. :</p>
+                     <p>PO No. :</p>
+                     <p>Created Date : </p>
+                     <p>Invoice Amount :</p>
+                     </div>
+                 </ion-col>
+                 <ion-col col-6>
+                 <div id="a">
+                     <p>IO87453278EA</p>
+                     <p>PO_101</p>
+                     <p>05/09/2018</p>
+                     <p>800$</p>
+                     </div>
+                   </ion-col>
+      
+               </ion-row>
+               <ion-row>
+                         <table>
+                               <tr>
+                                 <th>Item No.</th>
+                                  <th>Item name</th>
+                                 <th colspan="3">Quantity in Tonnes</th>
+                               </tr>
+                               <tr>
+                                 <td></td>
+                                 <td></td>
+                                <th>PO</th>
+                                <th>Invoice</th>
+                                <th>GRN</th>
+                              </tr>
+                              <tr>
+                                <td>IT_106</td>
+                                <td>UREA</td>
+                               <th>2</th>
+                               <th>1.5</th>
+                               <th>1.5</th>
+                             </tr>
+                          </table>
+                       </ion-row>
+                       <ion-row>
+                         <ion-col col-3>
+                         </ion-col>
+                         <ion-col col-3>
+                         <button ion-button (click)="userConfirm($event)">Accept</button>
+                       </ion-col>
+                       <ion-col col-4>
+                       <button ion-button >Hold</button>
+                     </ion-col>
+                     <ion-col col-2>
+                     </ion-col>
+                       </ion-row>
+           </ion-card>
+           </ion-grid>
+           
+</body>
+</html>

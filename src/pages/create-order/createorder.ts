@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {  NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { DashboardProcurement } from '../dashboard-procurement/dashboard-procurement';
+import { DashboardPurchase } from '../dashboard-purchase/purchase';
 @Component({
   selector: 'page-order',
   templateUrl: 'createorder.html'
@@ -15,10 +16,10 @@ export class CreateOrder {
   buy(event,item){
     let alert = this.alertCtrl.create({
     title: 'Order Confirmed',
-    subTitle: 'Order has been confirmed with farmers',
+    subTitle: 'Order has been confirmed with Nutrinor',
     buttons: [
            {
-        text: 'ok',
+        text: 'OK',
         handler: data => {
           this.navCtrl.push(DashboardProcurement);
         }
@@ -26,5 +27,8 @@ export class CreateOrder {
     ]
   });
   alert.present();
+  }
+  gobackdashboard(){
+    this.navCtrl.push(DashboardPurchase);
   }
 }

@@ -1,7 +1,6 @@
 page-goods-details {
   td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
+      border: 2px solid #dddddd;
       padding: 8px;
   }
   table {
@@ -19,8 +18,10 @@ page-goods-details {
   }
 th{
   font-weight: bold;
+  font-weight:16px;
+  text-align:center;
 }
   ion-card{
-    height: 480px;
+    height: 730px;
   }
 }

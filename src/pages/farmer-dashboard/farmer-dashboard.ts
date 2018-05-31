@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 import { GoodsDetailsPage } from '../goods-details/goods-details';
+import { PostJounalOrderlistPage } from '../post-jounal-orderlist/post-jounal-orderlist';
 /**
  * Generated class for the FarmerDashboardPage page.
  *
@@ -26,5 +27,8 @@ export class FarmerDashboardPage {
   }
   gobackdashboard(){
     this.navCtrl.push(DashboardProcurement);
+  }
+  postJournal(){
+    this.navCtrl.push(PostJounalOrderlistPage);
   }
 }

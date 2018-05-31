@@ -1,0 +1,54 @@
+#bga {
+    background: url("../assets/imgs/agriBackground.jpg");
+    background-size: cover;
+}
+
+ion-card, ion-item {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+page-list{
+  .title{
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+  }
+  #list1{
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    height:200px;
+    color:green;
+  }
+#list1 h2{
+  padding: 5px;
+  font-weight: bold;
+  font-weight:18px;
+  color:green;
+}
+#list1 h3{
+  padding: 5px;
+  font-size: 16px;
+  font-weight:bold;
+  color:green;
+}
+#list2 h2{
+  padding: 5px;
+  font-weight: bold;
+  font-weight:18px;
+  color:black;
+}
+#list2 h3{
+  padding: 5px;
+  font-size: 16px;
+  font-weight:bold;
+  color:black;
+}
+#list2{
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  height:200px;
+  color:green;
+}
+#col1{
+  font-size:16px;
+}
+}

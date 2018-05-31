@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FinanceInvoice } from '../finance-invoice/finance-invoice';
 import { ToastController } from 'ionic-angular';
+
+import { PastJournals } from '../finance-pastjournals/past-journals';
 @Component({
   selector: 'page-match-receipts',
   templateUrl: 'match-receipts.html'
@@ -28,5 +30,8 @@ presentToast() {
 present1(){
 
     this.navCtrl.push(FinanceInvoice);
+}
+gobackdashboard(){
+  this.navCtrl.push(PastJournals);
 }
 }

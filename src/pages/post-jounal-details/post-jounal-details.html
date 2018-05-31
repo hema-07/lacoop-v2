@@ -1,0 +1,91 @@
+<html>
+    <body id="dashbg" style="overflow:scroll;">
+      <div class="bar bar-header" fixed>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-2 icon-right>
+              <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+            </ion-col>
+            <ion-col col-2>
+              <p id="name">Claire</p>
+            </ion-col>
+            <ion-col col-4>
+              <img src="../assets/imgs/lacoopLogo.jpg">
+            </ion-col>
+            <ion-col col-3>
+    
+            </ion-col>
+            <ion-col col-1>
+              <img src="../assets/imgs/logout.png" id="logout">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <div class="bar bar-subheader" fixed>
+        <ion-grid>
+            <ion-row >
+              <ion-col col-3 (click)="goBack3()">
+                  <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;"  (click)="goBack3()"/>Back</a>
+              </ion-col>
+              <ion-col col-6 class="title">
+                  <h2 style="text-align:center;font-weight: bold;">Journal Details</h2>
+                </ion-col>
+                <ion-col col-3>
+                  </ion-col>
+            </ion-row>
+            </ion-grid>
+    </div>
+      <ion-card id="car" style="margin-top: 50px;opacity: 0.7;">
+      <ion-row>
+        <ion-col>
+          <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Account</th>
+                    <th>Notes</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                   <td rowspan="2">05/22/2018</td>
+                   <td >Inventory</td>
+                   <td rowspan="2">Urea received from Nutrinor</td>
+                   <td>2000</td>
+                   <td></td>
+                 </tr>
+                 <tr>
+                  <td >Accounts Payable</td>
+                  <td></td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                 <td rowspan="2">05/23/2018</td>
+                 <td >Accounts Payable</td>
+                 <td rowspan="2">Payment to Nutrinor against Urea PO</td>
+                 <td>2000</td>
+                 <td></td>
+               </tr>
+               <tr>
+                <td >Inventory</td>
+                <td></td>
+                <td>2000</td>
+              </tr>
+               </tbody>
+             </table>
+        </ion-col>
+      </ion-row>
+        <ion-row>
+
+
+        <button ion-button (click)="userConfirm($event)">Post Journal</button>
+
+        <button ion-button>Cancel</button>
+
+
+      </ion-row>
+      </ion-card>
+</body>
+</html>

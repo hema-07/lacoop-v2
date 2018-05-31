@@ -1,35 +1,41 @@
 <html>
+<body id="dashbg" style="overflow:scroll;">
+  <div class="bar bar-header" fixed>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2 icon-right>
+          <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
+        </ion-col>
+        <ion-col col-2>
+          <p id="name">Claire</p>
+        </ion-col>
+        <ion-col col-4>
+          <img src="../assets/imgs/lacoopLogo.jpg">
+        </ion-col>
+        <ion-col col-3>
 
-  <body id="dashbg" style="overflow:scroll;">
-    <div  id="nav" class="bar bar-header" fixed>
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-                <img id="person" style="border-radius:50%" src="../assets/imgs/claire.jpg" alt="img" height=""/>
-            </ion-col>
-
-            <ion-col>
-              <p id="name">Christy</p>
-            </ion-col>
-            <ion-col>
-              <img src="../assets/imgs/lacoopLogo.jpg" style="border-radius:5">
-            </ion-col>
-            <ion-col>
-            </ion-col>
-            <ion-col>
-              <img src="../assets/imgs/logout.png" id="logout">
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-    </div>
-    <div>
+        </ion-col>
+        <ion-col col-1>
+          <img src="../assets/imgs/logout.png" id="logout">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>
+<div>
+    <ion-grid>
         <ion-row>
-          <ion-col>
-              <h3 style="text-align: center;">Create Order</h3>
+          <ion-col col-3 col-sm (click)="gobackdashboard()">
+              <a style="font-size:19px;text-decoration:none;">&nbsp;<img src="../assets/imgs/back.png" style="margin-top: 15px;" (click)="gobackdashboard()"/>Back</a>
           </ion-col>
+          <ion-col col-6 col-sm class="title">
+              <h2 style="text-align: center;font-weight:bold;">Create Order</h2>
+            </ion-col>
+            <ion-col col-3 col-sm>
+              </ion-col>
         </ion-row>
+        </ion-grid>
 
-      </div>
+  </div>
       <div>
         <ion-row>
         <ion-col col-4>
@@ -48,7 +54,7 @@
         <tr>
           <th>Item Name</th>
           <th>Rate / Tonne in CAD</th>
-          <th>Qty</th>
+          <th>Qty in Tonnes</th>
           <th>Remarks</th>
         </tr>
         </thead>
